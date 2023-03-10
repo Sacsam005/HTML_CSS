@@ -1,0 +1,59 @@
+* {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Abel', san-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.image_gif {
+  width: 50px;
+  height: 50px;
+}
+
+.one {
+  background-image: url(img/udemy1.jpg);
+}
+
+.two {
+  background-image: url(img/udemy2.jpg);
+}
+
+.three {
+  background-image: url(img/udemy3.jpg);
+}
+
+.four {
+  background-image: url(img/udemy4.jpg);
+}
+
+.five {
+  background-image: url(img/ram.jpg);
+}
+
+.six {
+  background-image: url(img/rhino.jpg);
+}
+
+.seven {
+  background-image: url(img/camel.jpg);
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

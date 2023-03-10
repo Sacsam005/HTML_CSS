@@ -1,0 +1,77 @@
+html {
+    font-family: "OFL Sorts Mill Goudy";
+    font-variant: small-caps;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "sidebar main main main main"
+    "sidebar content-1 content-2 content-3 content-4"
+    "sidebar footer footer footer footer";
+    grid-gap: 0.4rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bolder; 
+}
+
+nav {
+    margin-top: 2px;
+    background-color: #00bbf9;
+    grid-area: nav;
+}
+
+main {
+    background-color: #2ec4b6;
+    grid-area: main;
+}
+
+#sidebar {
+    background-color: #4ecdc4;
+    grid-area: sidebar;
+}
+
+#content-1 {
+    background-color: #219ebc;
+    grid-area: content-1;
+}
+
+#content-2 {
+    background-color: #8ecae6;
+    grid-area: content-2;
+}
+
+#content-3 {
+    background-color: #126782;
+    grid-area:content-3;
+}
+
+#content-4 {
+    background-color: #38a3a5;
+    grid-area:  content-4;
+}
+
+footer {
+    background-color: #57cc99;
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.8fr 2fr 1fr 1fr 1fr 1fr 0.7fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content-1"
+        "content-2"
+        "content-3"
+        "content-4"
+        "footer";
+    }
+}
