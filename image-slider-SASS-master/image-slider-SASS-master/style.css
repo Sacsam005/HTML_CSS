@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Fondamento&family=Yuji+Boku&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Yuji Boku', serif;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+img {
+  width: 120%;
+  -webkit-animation: zoom-out 12s linear infinite;
+          animation: zoom-out 12s linear infinite;
+}
+
+.text-box {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 5%;
+  color: white;
+  -webkit-animation: textUp 12s linear infinite;
+          animation: textUp 12s linear infinite;
+}
+
+.text-box h1 {
+  font-size: 6rem;
+}
+
+@-webkit-keyframes textUp {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+@keyframes textUp {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+.text-box span {
+  width: 100px;
+  height: 1px;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+}
+
+.slide1 {
+  -webkit-animation: fade1 12s linear infinite;
+          animation: fade1 12s linear infinite;
+}
+
+.slide2 {
+  -webkit-animation: fade2 12s linear infinite;
+          animation: fade2 12s linear infinite;
+}
+
+.slide3 {
+  -webkit-animation: fade3 12s linear infinite;
+          animation: fade3 12s linear infinite;
+}
+
+@-webkit-keyframes fade1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes fade1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes fade2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes fade3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes fade3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes zoom-out {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes zoom-out {
+  100% {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
