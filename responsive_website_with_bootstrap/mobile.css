@@ -1,0 +1,132 @@
+@media only screen and (max-width: 768px) {
+  
+  header .navbar-brand {
+    padding-left: 1rem;
+  }
+
+  div.content.text-center h1, .dreams h1, .panel h1, .row1 h1  {
+       font-size: 3.5vmin;
+       margin: 0;
+       margin-top: 2.5vmin;
+    }
+
+    h5.card-title {
+      font-size: 2.5vmin;
+    }
+
+    p.pt-4, .row1 p, p.text-muted {
+      font-size: 0.75rem;
+      text-align: center;
+      line-height: 1.5em;
+    }
+    p.card-text {
+      font-size: 0.5rem;
+    }
+
+    .panel h1 {
+        text-align: center;
+        margin-top: 4vmin;
+    }
+
+    .col-sm-12 button {
+      max-width: 25%;
+      font-size: 2vmin;
+      border-radius: 5vmin;
+      margin-top: 1vmin;
+    }
+
+  .col-md-7 img, .pray img {
+    width: 100%;
+    min-width: 50%;
+    margin-top: 1rem;
+    height:auto;
+  }
+
+  .col-md-2 img {
+    width: 6vw;
+    margin-top: 18vmin;
+    height: 3vh;
+    margin-left: -2.5vmin;
+  }
+
+  .section-2 .cover {
+      width: 100%;
+  }
+
+  img#logo {
+      max-width: 50%;
+      margin: auto;
+      height: auto;
+  }
+
+  div.rows {
+    grid-template-columns: (no-repeat, 6fr);
+  }
+
+  div.dreams {
+      width: 100%;
+      margin: auto;
+      height: auto;
+  }
+
+  .card-body {
+    min-width: 50%;
+    font-size: 1rem;  
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    border-radius: 20vmin;
+  }  
+
+  .col-md-6 .btn {
+      max-width: 50%;
+  }
+
+  .section-3 {
+    height: inherit;
+    padding: 10vmin !important;
+  }
+
+  .section-3.row1 h1 {
+    padding: 6vmin 4vmin;
+  }
+
+  /* .col-sm-12 button {
+      min-width: 50%;
+      font-size: 1vmin;
+      border-radius: 5vmin;
+      margin-top: 1vmin;
+  } */
+
+  i.fa.fa-3x {
+    font-size: 2.5vmin;
+  }
+
+  .team.col-md-4 {
+      margin-right: 14vmin;
+      align-content: center;
+  }
+
+  .section-4 .carousel-inner {
+    text-align: center;
+  }
+
+  .flex-box.row {
+    text-align: center;
+  }
+
+  .input-group input {
+    text-align: center;
+    width: 100%;
+    min-width: 50%!important;
+    padding-right: 3vmin;
+  }
+
+  h3.text-light, h4.text-light {
+    font-size: 3vmin;
+    margin-top:2vmin;
+  }
+}

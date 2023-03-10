@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Quantico&family=Titillium+Web:wght@200&display=swap");
+
+:root {
+  --primary-color: teal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quantico", sans-serif;
+  color: #333;
+  line-height: 1.5rem;
+}
+
+.docs-main nav li {
+  font-size: 1rem;
+  border-bottom: 1px white solid;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.docs-main nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+.docs-main nav li a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* features */
+
+.docs-head img {
+  width: 200px;
+  margin-left: 0;
+}
+
+.docs-sub-head img {
+  width: 200px;
+  margin-left: 0;
+}
+
+.docs-main h3 {
+  margin: 20px 0;
+}
+
+.docs-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+
+/* animation */
+.card.bg-light.p-3 {
+  animation: slideFromLeft 1s ease-in;
+}
+
+.card {
+  animation: slideFromRight 1s ease-in;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    height: 110px;
+    margin: 0 auto;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  h1.logo {
+    margin-left: 2rem;
+  }
+
+  .docs-main nav li a {
+    font-size: 0.9rem;
+  }
+
+  .fas {
+    font-size: 1.3rem;
+  }
+
+  .btn-primary {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
