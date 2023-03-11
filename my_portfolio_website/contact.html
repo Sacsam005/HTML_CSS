@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact | Sachin - Find me on Linkedin, Github, and CodePen</title>
+
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Find Sachin Samal on Linkedin, Github, CodePen, and other social media platforms. Connect for collaboration and follow for more web development content.">
+  <meta name="keywords"
+    content="sachin, samal, contact, content, codepen, github, linkedin, email, follow, find, visit, collaboration">
+  <meta name="author" content="Sachin Samal">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=yes">
+  <link rel="manifest" href="./manifest.json">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" sizes="16x16" href="./img/sachin-samal_16x16.png" />
+  <link rel="shortcut icon" sizes="24x24" href="./img/sachin-samal_24x24.png" />
+  <link rel="shortcut icon" sizes="32x32" href="./img/sachin-samal_32x32.png" />
+  <link rel="apple-touch-icon" sizes="48x48" href="./img/sachin-samal_48x48.png" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Loader Animation -->
+  <div id="loader-container">
+    <div class="loader_title">
+      <h4>Loading</h4>
+    </div>
+    <div class="loader_square_container">
+      <div class='square'></div>
+      <div class='square'></div>
+      <div class='square'></div>
+    </div>
+  </div>
+  <!--End of Loader Animation -->
+
+  <!-- Scroll to Top -->
+  <button onclick="scrollTopFunction()" id="scroll-top-button" aria-label="Scroll top"><i
+      class="fas fa-chevron-up"></i></button>
+  <!-- End of Scroll to Top -->
+
+  <!-- Header Section -->
+  <header id="header" class="change-theme">
+    <nav>
+      <a href="index.html" id="home-link" aria-label="Goto home page">
+        <img src="./img/sachin-samal-logo.png" alt="Sachin Samal" id="logo">
+      </a>
+
+      <i id="theme-btn" class="fas fa-moon"></i>
+
+      <div class="navbar">
+        <ul class="nav-menu change-theme">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="extras.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blogs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+  </header>
+  <!-- End of Header Section -->
+
+  <!-- Form Section -->
+  <div class="form">
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+      <div class="title">
+        <h1>CONTACT</h1>
+      </div>
+      <div class="half">
+        <div class="item">
+          <label for="name">FULL NAME</label>
+          <input type="text" placeholder="Full Name" id="name" name="name" required>
+        </div>
+        <div class="item">
+          <label for="email">EMAIL</label>
+          <input type="text" placeholder="Email Address" id="email-id" name="email" required>
+        </div>
+      </div>
+      <div class="full">
+        <label for="message">MESSAGE</label>
+        <textarea name="message" placeholder="Message" id="message" required></textarea>
+      </div>
+      <div class="action">
+        <input type="submit" value="SEND MESSAGE">
+        <input type="reset" value="RESET">
+      </div>
+    </form>
+  </div>
+  <!-- End  of Form Section -->
+
+  <hr>
+
+  <!-- Footer Section-->
+  <footer class="footer-section change-theme">
+    <div class="container footer-section-grid">
+      <div class="quote">
+        <div class="quote">
+          <strong><span>Connection:</span> Each contact with a human being is so rare, so precious, one should preserve
+            it!<span> - Anais Nin</span></strong>
+        </div>
+      </div>
+
+      <div class="footer-social-links">
+        <h5>Connect with me</h5>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/sachinsamal120" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/shachinmagar/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Sacsam005" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sachin-samal-590b19138/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/SachinSamal6" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <div class="input-group">
+            <input type="text" class="form-control email" placeholder="Email">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <a href="mailto:shachinmagar120.smATgmailDOTcom" onclick="this.href = this.href
+                  .replace(/AT/, '@')
+                  .replace(/DOT/, '.')">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <p class="text-center">&copy; 2021 | This page is maintained by
+      <a href="index.html#home">
+        <span>Sacsam005</span>
+      </a>
+    </p>
+  </footer>
+  <!-- End of Footer Section -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RT4260NNGK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RT4260NNGK');
+  </script>
+
+  <!-- Optional Javascript -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

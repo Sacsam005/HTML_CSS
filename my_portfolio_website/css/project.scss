@@ -1,0 +1,420 @@
+.text-left {
+  padding: 0 1rem;
+}
+
+/* Asset Section */
+.asset-section {
+  padding: 1rem 0;
+
+  .asset-section-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+    border: 0.5px solid #ffa500;
+
+    & h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .asset-item {
+      &:hover img {
+        transform: scale(1.035);
+        transition: 1s ease-in-out;
+      }
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      }
+
+      a {
+        color: #222;
+        text-decoration: none;
+        line-height: 1.5;
+      }
+
+      &.asset-item1 {
+        grid-column: 1 / 3;
+      }
+
+      &.asset-item2 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+      }
+
+      &.asset-item4 {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+      }
+
+      &.asset-item5 {
+        grid-column: 4 / 5;
+        grid-row: 2 / 4;
+      }
+
+      &.asset-item7 {
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+      }
+
+      img {
+        width: 25%;
+        height: 35%;
+      }
+    }
+  }
+}
+
+/* Asset Section ends */
+
+/*Project Table Section*/
+.project-table-wrapper {
+  margin-top: 50px;
+  position: relative;
+}
+
+.project-table {
+  display: table;
+  /* required for table-layout to be used (not normally necessary; included for completeness) */
+  table-layout: fixed;
+  /* this keeps your columns width fixed with exactly the right width */
+  width: 100%;
+  /* table must have width set for fixed layout to work as expected */
+  height: 100%;
+  text-align: left;
+  // padding: 0 0.25rem;
+
+
+  thead {
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  th {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    @media screen and(max-width:500px) {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  td {
+    overflow-wrap: break-word;
+
+    @media screen and(max-width:500px) {
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    @media screen and(max-width:500px) {
+      li {
+        font-weight: 500;
+      }
+    }
+
+    ol {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 10px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: inherit;
+
+      &:hover {
+        color: #FA493B;
+        text-decoration: none;
+        transition: 0.2s;
+      }
+
+      @media screen and(max-width:500px) {
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* End of Project Table Setion */
+
+/* Project grid section */
+.project-grid-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  gap: 2rem;
+
+  .card-item1 {
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      list-style: none;
+    }
+
+    &:hover img {
+      transform: scale(1.025);
+      transition: 1s ease-in-out;
+    }
+  }
+}
+
+.card-body {
+  box-shadow: none;
+}
+
+.card-title {
+  color: #222;
+
+  h2 {
+    background-image: linear-gradient(90deg, #E77200, #E77200);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 500ms ease;
+    display: inline-block;
+
+    &:hover {
+      background-size: 100% 2px;
+    }
+  }
+}
+
+
+/* End of Project grid section */
+
+/* Tools Section for Project Html*/
+.project-tools-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  gap: 2.5rem;
+  padding: 0 0.5rem;
+
+  & h2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  ul {
+    padding: 0 !important;
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
+
+#tools-item1 {
+  height: 55%;
+}
+
+#tools-item1,
+#tools-item2 {
+  &.card p {
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+}
+
+#tools-item1 a,
+#tools-item2 a,
+p {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+#tools-item1 a,
+#tools-item2 a {
+  color: #222;
+}
+
+.tool-play-content {
+  overflow-x: hidden;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  img {
+    width: 8vmin;
+    height: 8vmin;
+    margin-top: 0.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (min-width:768px) {
+      height: 6vmin;
+      width: 6vmin;
+    }
+  }
+}
+
+pre {
+  color: #FA493B !important;
+  white-space: initial;
+  margin: 0 !important;
+}
+
+code {
+  font-weight: 600 !important;
+}
+
+#tools-item1,
+#tools-item2 {
+  padding-left: 0.5rem;
+  text-align: start;
+  line-height: 1.5;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+/* End of Tools section for Project Html*/
+
+// Media Queries
+@media screen and (max-width: 1024px) {
+  #npm-progress {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .asset-section {
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .asset-section-wrapper {
+      overflow-x: scroll;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0.75rem;
+      border: none;
+      gap: 2rem;
+
+      .asset-item {
+        min-width: 250px;
+        height: 225px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+        &::-webkit-scrollbar {
+          width: 0.5rem;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: #F5C392;
+        }
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        img {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .project-grid-section {
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.75rem;
+    border: none;
+    gap: 1rem;
+
+    .card-body {
+      min-width: 250px;
+      height: 225px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-items: center;
+      padding: 0.5rem;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      padding: 0 !important;
+
+      .card-title {
+        display: block;
+        margin: 0 auto;
+
+        h2 {
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+
+        p {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  #npm-progress {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:360px) {
+
+  .asset-section-wrapper,
+  .project-grid-section {
+    gap: 1rem !important;
+  }
+}

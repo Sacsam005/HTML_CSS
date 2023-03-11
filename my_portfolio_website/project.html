@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Projects | Sachin - Github and CodePen projects on web development</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Sachin's web development projects include working with HTML, CSS, ReactJS, manipulating APIs/JSON, improving SEO, and converting UI/UX to reusable code.">
+    <meta name="keywords"
+        content="sachin samal, project, github, uiux, code, frontend, landing page, reactjs, tech stacks">
+    <meta name="author" content="Sachin Samal">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=yes">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" sizes="16x16" href="./img/sachin-samal_16x16.png" />
+    <link rel="shortcut icon" sizes="24x24" href="./img/sachin-samal_24x24.png" />
+    <link rel="shortcut icon" sizes="32x32" href="./img/sachin-samal_32x32.png" />
+    <link rel="apple-touch-icon" sizes="48x48" href="./img/sachin-samal_48x48.png" />
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Loader Animation -->
+    <div id="loader-container">
+        <div class="loader_title">
+            <h4>Loading</h4>
+        </div>
+        <div class="loader_square_container">
+            <div class='square'></div>
+            <div class='square'></div>
+            <div class='square'></div>
+        </div>
+    </div>
+    <!--End of Loader Animation -->
+
+    <!-- Scroll to Top -->
+    <button onclick="scrollTopFunction()" id="scroll-top-button" aria-label="Scroll top"><i
+            class="fas fa-chevron-up"></i></button>
+    <!-- End of Scroll to Top -->
+
+    <!-- Header Section -->
+    <header id="header" class="change-theme">
+        <nav>
+            <a href="index.html" id="home-link" aria-label="Goto home page">
+                <img src="./img/sachin-samal-logo.png" alt="Sachin Samal" id="logo">
+            </a>
+
+            <i id="theme-btn" class="fas fa-moon"></i>
+
+            <div class="navbar">
+                <ul class="nav-menu change-theme">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extras.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-link" href="project.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    </header>
+    <!-- End of Header Section -->
+
+    <!-- Fixed Icon -->
+    <div id="fixed-icon">
+        <button class="floating-btn" aria-label="Contact me">
+            <img src="./img/lets_connect_icon.png" alt="Sachin wants to connect"> <span>Let's
+                Connect</span>
+        </button>
+    </div>
+    <!-- End of Fixed Icon -->
+
+
+    <!-- Floating connect box -->
+    <div class="floating-panel-container">
+        <div class="floating-panel change-theme">
+            <p>You motivate me! Let's connect</p>
+            <button class="close-btn"><i class="fas fa-times" aria-label="Close"></i></button>
+            <a href="contact.html"><button class="all-button" aria-label="Contact me">Get in touch</button></a>
+            <ul>
+                <li>
+                    <a href="https://codepen.io/sacsam005" target="_blank" aria-label="Connect with me on CodePen">
+                        <i class="fab fa-codepen" style="color:#171717"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/sachinsamal6" target="_blank" aria-label="Connect with me on Twitter">
+                        <i class="fab fa-twitter" style="color:#1A8CD8"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sachin-samal005/" target="_blank"
+                        aria-label="Connect with me on LinkedIn">
+                        <i class="fab fa-linkedin" style="color:#0274B3"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/sachinsamal120" target="_blank"
+                        aria-label="Connect with me on Facebook">
+                        <i class="fab fa-facebook" style="color:#1877F2"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sacsam005" target="_blank" aria-label="Connect with me on GitHub">
+                        <i class="fab fa-github" style="color:#14191E"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>Each contact with a human being is so rare, so precious, one should preserve it! - Anais Nin</p>
+
+        </div>
+    </div>
+    <!-- End of Floating connect box -->
+
+    <!-- Asset Section -->
+    <section class="asset-section change-theme" id="asset-section">
+        <h1 class="text-left fs-4 fw-bold">Collection of my projects</h1>
+        <p class="text-left">These projects are primarily based on frontend UI design and development. Some of 'em
+            involve API integration
+            and JSON manipulation, other than that are simply
+            conversion of UI / UX design component to reusable code...</span></p>
+
+        <div class="asset-section-wrapper">
+
+            <div class="asset-item asset-item1">
+                <a href="https://netflixcloned005.netlify.app/" class="change-theme">
+                    <img src="./img/netflix-cloned-by-sachin.png"
+                        alt="After Login Netflix page cloned with ReactJS by Sachin">
+                    <h2>Netflix Clone</h2>
+                    <p>Netflix after LogIn page w/ReactJS...</p>
+                </a>
+            </div>
+            <div class="asset-item asset-item2">
+                <a href="https://rpubs.com/sacsam005" target="_blank" class="change-theme">
+                    <img src="./img/sachin-samal-data-mining.png" alt="Data Mining projects in RStudio/RPubs">
+                    <h2>Data Mining with R</h2>
+                    <p>Classification, EDA, Regression, Association with R</p>
+                </a>
+            </div>
+            <div class="asset-item asset-item3">
+                <a href="https://sacsam005.github.io/design-collections/" target="_blank" class="change-theme">
+                    <img src="./img/sachin's-design-collection.png" alt="Sachin's design collection">
+                    <h2>Design Collection</h2>
+                    <p>Adobe XD Design collection...</p>
+                </a>
+            </div>
+            <div class="asset-item asset-item4">
+                <a href="https://codepen.io/sacsam005/full/BaJmaXy" target="_blank" class="change-theme">
+                    <img src="./img/sachin-samal-starfield.png"
+                        alt="Sachin's CodePen Starfield project using webanimations.min.js">
+                    <h2>Starfield Animation</h2>
+                    <p>Starfield animation w/webanimations.min.js</p>
+                </a>
+            </div>
+            <div class="asset-item asset-item5">
+                <a href="https://codepen.io/sacsam005/full/rNpYLRz" target="_blank" class="change-theme">
+                    <img src="./img/financial-dashboard.png" alt="FinTech dashboard using SCSS and Javascript.">
+                    <h2>Financial Dashboard</h2>
+                    <p>Dashboard layout for budget or expense app...</p>
+                </a>
+            </div>
+            <div class="asset-item asset-item6">
+                <a href="https://sacsam005.github.io/responsive_watches_shop/" target="_blank" class="change-theme">
+                    <img src="./img/responsive-webdesign.png" alt="Responsive webdesign by Sachin" />
+                    <h2>Responsive website</h2>
+                    <p>A simple landing page w/SCSS...</p>
+                </a>
+            </div>
+            <div class="asset-item asset-item7">
+                <a href="https://codepen.io/sacsam005/full/BaJmLwz" target="_blank" class="change-theme">
+                    <img src="./img/sachin-samal-portfolio.png"
+                        alt="Sachin's Responsive Portfolio template for beginners">
+                    <h2>Portfolio Template</h2>
+                    <p>Responsive portfolio template for beginners...</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End of Asset Section -->
+
+    <!-- Project Section -->
+    <section class="project-table-section">
+        <div class="project-table-wrapper">
+            <table class="project-table table change-theme">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Tech Stack</th>
+                        <th>Content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Landing Pages, portfolio sites, cross-browser/device compatible web pages using HTML5 grid
+                            layouts, CSS3 media queries, SCSS, JavaScript, and Bootstrap...
+                        </td>
+                        <td>
+                            <ul>
+                                <li>HTML | #html5 #landing_page #semantic_html #non_semantic_html</li>
+                                <li>CSS | #css3 #cssAnimation #grid_layouts #media_queries</li>
+                                <li>JS | #javascript #json #js_DOM</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ol>
+                                <li><a href="https://samstore005.netlify.app">E-commerce Template</a></li>
+                                <li><a href="https://sacsam005.github.io/html_css-portfolio/">HTML/CSS Portfolio</a>
+                                </li>
+                                <li><a href="https://netflixcloned1005.netlify.app">Netflix Clone</a></li>
+                                <li><a href="https://webdesign1005.netlify.app/">Design Landing page</a></li>
+                                <li><a href="https://codeforfun005.netlify.app/">Code For Fun</a></li>
+                                <li><a href="https://binasportsgoods.netlify.app/">Bina's Sports Goods</a></li>
+                                <li><a href="https://samcloud.netlify.app/">samCloud</a></li>
+                                <li><a href="https://visitnepal2021demo.netlify.app/">Visit Nepal 2021</a></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Single-page applications (SPA)s and user interface based web platforms using ReactJS and
+                            react-router | practice of react Material-UI...</td>
+                        <td>
+                            <ul>
+                                <li>ReactJS | #reactJS #react_router_dom #react_material_UI #react_styled_component
+                                    #react_hooks #react_state_management</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ol>
+                                <li><a href="https://burgerhouse005.netlify.app/">Burger House</a></li>
+                                <li><a href="https://reactportfolio005.netlify.app/">React Portfolio</a></li>
+                                <li><a href="https://reactstyledcomp005.netlify.app/">React Styled Component</a></li>
+                                <li><a href="https://travelmonkey120.netlify.app/">Travel Monkey</a></li>
+                                <li> <a href="https://binamagarai005.netlify.app/">Bina Rai</a></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Implementation of popular combination of React + Redux to manage web application state to
+                            build user specified web pages | Fetced APIs...</td>
+                        <td>
+                            <ul>
+                                <li>React + Redux | #react #redux_store #react_redux_connect #fetch_APIs</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ol>
+                                <li><a href="https://reduxstore005.netlify.app/">Redux Store Demo</a></li>
+                                <li><a href="https://breakingbad005.netlify.app/">Breaking Bad Characters</a></li>
+                            </ol>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- End of Project Table Section -->
+
+    <!-- Section-2 Projects -->
+    <div class="project-grid-section">
+        <a href="https://samtube005.netlify.app" target="_blank">
+            <div class="card-body  card-item1">
+                <div class="card-img">
+                    <img src="./img/sachin's-movie-canvas.png" alt="Movies streaming landing page by Sachin">
+                </div>
+                <div class="card-title change-theme">
+                    <h2>Landing Page</h2>
+                    <p>With SCSS</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://researchai005.netlify.app" target="_blank">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./img/landing-page.png" alt="Landing page by Sachin">
+                </div>
+                <div class="card-title change-theme">
+                    <h2>Landing Page</h2>
+                    <p>With reactJS</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://searchperk005.netlify.app" target="_blank">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./img/sachin's-landing-page.png" alt="Responsive landing page by Sachin">
+                </div>
+                <div class="card-title change-theme">
+                    <h2>Landing Page</h2>
+                    <p>In HTML | CSS | JS</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!-- End of Section-2 Projects -->
+
+    <!-- Tools Section -->
+    <section class="project-tools-section" id="project-tools-section">
+        <div class="project-tools-wrapper">
+            <div class="card change-theme" id="tools-item1">
+                <h2>Essentials</h2>
+                <ul>
+                    <li>
+                        <a href="index.html#tech-stack" class="change-theme">Frameworks | Tools</a>
+                    </li>
+                    <li>
+                        <a href="#resources" class="change-theme">Resources</a>
+                    </li>
+                    <li>
+                        <a href="https://opensource.com/users/sacsam005" class="change-theme">Blogs</a>
+                    </li>
+                    <div class="tool-play-content d-flex align-items-center justify-content-center">
+                        <img src="./img/play.png" alt="Play button" id="click" aria-label="Play Sachin's favorite song">
+                        <br>
+                        <p class="m-auto">
+                            Happy surfing!!!
+                        </p>
+                    </div>
+                    <audio id="music">
+                        <source src="./img/music.mp3" type="audio/mp3">
+                    </audio>
+                </ul>
+            </div>
+
+            <div class="card change-theme" id="tools-item2">
+                <h2>Frequently used Tools</h2>
+                <img src="./img/sachin-samal-npm.svg" alt="NPM progress count GIF" width="50%" id="npm-progress" />
+                <p></p>
+                <pre><code>FRONTEND => HTML | CSS | JavaScript ES6 | ReactJS | Bootstrap | SASS | Tailwind CSS</code></pre>
+                <pre><code>BACKEND => C# | some Java and Python</code></pre>
+                <pre><code>FRAMEWORKS => ASP.NET | ENTITY Framework Core | SPFx | some ThreeJS</code></pre>
+                <pre><code>SOURCE CONTROL => Git | GitHub | GitLab | GitBucket | Azure DevOps</code></pre>
+                <pre><code>DBMS => MySQL | SQLite | Microsoft SQL Server | Azure Data Studio</code></pre>
+                <pre><code>👉🏻 Knowledge of ServiceNow | Sharepoint | SDLC | CI/CD | Ui Path RPA | Project Lifecycle, APIs, Restful APIs…</code></pre>
+                <p>DESIGN | ANIMATION => XD, Sketch, Figma, Blender, Spline</p>
+                <pre id="resources"><code> $install XD | Figma | Spline | Blender | Sketch</code></pre>
+                <p>Resources</p>
+                <pre><code>$install VS code | Visual Studio | node.js @latest_version| NPM | Yarn | React | Redux | Git </code></pre>
+                <pre><code>$install SQL Server | SQLite | Azure Data Studio</code></pre>
+            </div>
+        </div>
+    </section>
+    <!-- End of Tools Section -->
+
+    <hr>
+
+    <!-- Footer Section-->
+    <footer class="footer-section change-theme">
+        <div class="container footer-section-grid">
+            <div class="quote">
+                <div class="quote">
+                    <strong><span>Programmer:</span> someone who has a deeper and closer relationship with computers and
+                        machines!<span> - Sachin Samal</span></strong>
+                </div>
+            </div>
+
+            <div class="footer-social-links">
+                <button class="footer-floating-btn all-button fw-bolder mb-1" aria-label="Contact me">Get in
+                    touch</button>
+                <form class="form-inline">
+                    <div class="input-group">
+                        <input type="text" class="form-control email" placeholder="Send me an Email">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <a href="mailto:shachinmagar120.smATgmailDOTcom" onclick="this.href = this.href
+                .replace(/AT/, '@')
+                .replace(/DOT/, '.')"><i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <p class="text-center">&copy; 2021 | This page is maintained by
+            <a href="index.html#home">
+                <span>Sacsam005</span>
+            </a>
+        </p>
+    </footer>
+    <!-- End of Footer Section -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RT4260NNGK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RT4260NNGK');
+
+        // play music
+        var myMusic = document.getElementById("music");
+        var button = document.getElementById("click");
+
+        button.onclick = () => {
+            if (myMusic.paused) {
+                myMusic.play();
+                button.src = "./img/pause.png";
+            } else {
+                myMusic.pause();
+                button.src = "./img/play.png";
+            }
+        };
+    </script>
+
+    <!-- Optional JavaScript -->
+    <script src="./js/main.js"></script>
+    <script defer src="./js/chatbot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

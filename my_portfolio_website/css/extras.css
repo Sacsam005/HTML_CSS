@@ -1,0 +1,302 @@
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Work experience */
+#experience-section {
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.experience-section-wrapper {
+  overflow-x: hidden;
+}
+
+.experience-section-wrapper .row {
+  position: relative;
+}
+
+.timeline-label img {
+  width: 100%;
+  align-items: center;
+  -webkit-animation: floating 4s linear infinite;
+  animation: floating 5s linear infinite alternate-reverse;
+}
+
+.timeline-label h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.timeline-label p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.timeline-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline .experience-timeline-wrapper {
+  position: relative;
+  float: left;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid #ccc;
+}
+
+#first a,
+#first .timeline-role,
+#first p {
+  color: #ac75e9;
+  font-weight: 600;
+}
+
+#second a,
+#second .timeline-role,
+#second p {
+  color: #4ab25d;
+  font-weight: 600;
+}
+
+#first a,
+#first .timeline-role,
+#second a,
+#second .timeline-role,
+.timeline-experience-info a {
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: 500ms ease;
+}
+
+.timeline-img:hover~#first a,
+.timeline-img:hover~#first .timeline-role,
+.timeline-img:hover~#second a,
+.timeline-img:hover~#second .timeline-role,
+.timeline-experience-info a:hover {
+  background-size: 100% 2px !important;
+}
+
+#first a,
+#first .timeline-role {
+  background-image: linear-gradient(90deg, #ffc0ff, #a060c5, #ac75e9);
+}
+
+#second a,
+#second .timeline-role {
+  background-image: linear-gradient(90deg, #7ee58b, #018131, #4ab25d);
+}
+
+.timeline time {
+  display: block;
+  width: 65px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.5rem;
+}
+
+.timeline-img,
+.timeline-experience-info,
+.timeline-experience-info a,
+.timeline-experience-info .role,
+.timeline-experience-info p {
+  clear: none;
+}
+
+.timeline-circle {
+  position: absolute;
+  top: 16px;
+  left: -13px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ac75e9;
+}
+
+.timeline-circle.two {
+  background-color: #4ab25d;
+}
+
+.timeline-img {
+  float: left;
+  width: 64px;
+  height: 64px;
+}
+
+.timeline-img img {
+  width: 200%;
+}
+
+.timeline-experience-info {
+  margin-left: 10rem;
+}
+
+.timeline-experience-info a,
+.timeline-experience-info .timeline-role,
+.timeline-experience-info p {
+  margin-top: 0.25rem;
+}
+
+/* End of Work experience */
+
+/* Experience grid */
+.experience-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  align-items: start;
+  position: relative;
+  padding: 1rem 0.5rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background: url('../img/sachin-samal-light.jpg') center/cover no-repeat fixed;
+}
+
+.experience-grid p {
+  line-height: 1.5;
+  text-align: left;
+  margin: auto;
+  padding: 1rem;
+  color: #fff;
+  background-color: hsl(211, 15%, 33%);
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  width: 380px;
+  max-width: 100%;
+}
+
+.experience-grid img {
+  max-width: 100%;
+  width: 100%;
+  -webkit-animation: floating 4s linear infinite;
+  animation: floating 4s linear infinite;
+  background: transparent;
+}
+
+.experience-grid img:first-child {
+  margin-top: 2rem;
+}
+
+.experience-grid img:last-child {
+  margin-top: 25rem;
+}
+
+@-webkit-keyframes floating {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+  }
+
+  50% {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+}
+
+@keyframes floating {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+  }
+
+  50% {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+}
+
+/* End of Experience grid */
+
+/* Experience page Media Queries */
+@media screen and (max-width: 680px) {
+  .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .timeline-label img {
+    width: 100%;
+    align-items: center;
+  }
+
+  .experience-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.25rem;
+  }
+
+  .experience-grid img {
+    width: 100%;
+    height: 95%;
+  }
+
+  .experience-grid img:first-child,
+  .experience-grid img:last-child {
+    margin-top: 0;
+  }
+
+  .box {
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .experience-grid {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  img {
+    width: 100%;
+  }
+
+  .experience-grid {
+    padding: 1rem 0.5rem;
+  }
+
+  .experience-grid p {
+    width: auto;
+  }
+
+  .experience-grid.box {
+    width: auto;
+  }
+
+  .timeline-experience-info a,
+  .timeline-experience-info p,
+  .timeline-experience-info .timeline-role {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .experience-grid {
+    overflow-x: hidden;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  .box {
+    margin: 0 auto;
+  }
+}
