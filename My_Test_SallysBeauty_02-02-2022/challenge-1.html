@@ -1,0 +1,64 @@
+<style>
+    .bhm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        background-color: #C65F35;
+        font-family: Arial, sans-serif;
+    }
+
+    .bhm__logo {
+        max-width: 400px;
+    }
+
+    .bhm h2,
+    .bhm p {
+        color: #fff;
+    }
+
+    .bhm h2 {
+        margin-bottom: 0px;
+    }
+
+    .bhm__founders {
+        max-width: 1100px;
+    }
+
+    .bhm__buttons {
+        display: flex;
+    }
+
+    .bhm__buttons a {
+        margin: 0 20px;
+        color: white;
+        background-image: linear-gradient(to right, #503ab3, #443d5c);
+        background-size: 0% 3px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        transition: 300ms ease;
+    }
+
+
+    .bhm__buttons a:hover {
+        background-size: 100% 3px;
+    }
+</style>
+
+<section class="bhm">
+    <img class="bhm__logo" src="img/bhm_logo.png" />
+    <h2>Celebrating Black Founders</h2>
+    <p>Meet the trailblazers behind some of our black-owned brands – and shop their products!</p>
+    <img class="bhm__founders" src="img/bhm_founders.jpg" />
+    <div class="bhm__buttons">
+        <a href="$url('Search-Show', 'cgid', 'textured-and-curly-hair-care')$?fr=hp&icid=bhm_texture-lp" class="col-sm-3 px-1 my-1">
+            <h4 style="text-decoration:underline;">Learn More</h4>
+        </a>
+        <a href="$url('Search-Show', 'cgid', 'textured-multicultural-hair')$?fr=hp&icid=bhm_plp" class="col-sm-3 px-1 my-1">
+            <h4 style="text-decoration:underline;">Shop Textured Hair</h4>
+        </a>
+        <a href="$url('Search-Show', 'cgid', 'textured-hair-innovators')$?fr=hp&icid=bhm_innovators" class="col-sm-3 px-1 my-1">
+            <h4 style="text-decoration:underline;">Shop Black-Founded Brands</h4>
+        </a>
+    </div>
+</section>

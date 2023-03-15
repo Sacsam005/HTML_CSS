@@ -1,0 +1,59 @@
+// Variables
+$primaryColor: #00945f;
+$primaryFontColor: #759b24;
+$hoverLink: #628518;
+$buttonColor: #e97300;
+$hoverButton: #fd8f21;
+$secondaryFontColor: #888888;
+$backgroundColor: #ebf7f5;
+$lightGray: #eeeeee;
+$darkGray: #312e2e;
+$white: #fff;
+
+// media queries
+$smallDevice: 400px;
+$phone: 576px;
+$tablet: 768px;
+$miniLaptop: 876px;
+$largeDevice: 992px;
+
+// Mixins
+@mixin heading1 {
+  font-weight: 400;
+  color: $primaryColor;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  & + hr {
+    width: 100px;
+    border: 1px solid $primaryColor;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@mixin heading2 {
+  @include heading1;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
+@mixin body {
+  color: $secondaryFontColor;
+  line-height: 180%;
+  font-size: 1rem;
+}
+
+@mixin button {
+  background-color: $buttonColor;
+  color: $white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    background-color: $hoverButton;
+    cursor: pointer;
+  }
+}
